@@ -276,6 +276,46 @@ const InvitationCard = ({ isVisible, details }: InvitationCardProps) => {
             )}
           </motion.div>
 
+          {/* CTA - Wedding App */}
+          <motion.div 
+            variants={itemVariants}
+            className="mb-10"
+          >
+            <p className="text-xs tracking-[0.25em] uppercase text-burgundy/60 font-light mb-4">
+              Celebrate with us
+            </p>
+            <motion.a
+              href="https://vigneshwaraak.co.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.05, y: -2 }}
+              whileTap={{ scale: 0.98 }}
+              animate={{
+                boxShadow: [
+                  "0 4px 20px rgba(184, 148, 100, 0.3)",
+                  "0 8px 30px rgba(184, 148, 100, 0.5)",
+                  "0 4px 20px rgba(184, 148, 100, 0.3)",
+                ],
+              }}
+              transition={{
+                boxShadow: { duration: 2, repeat: Infinity, ease: "easeInOut" },
+              }}
+              className="inline-flex items-center gap-3 px-8 py-4 bg-cream border-2 border-burgundy/40 text-burgundy rounded-lg font-light tracking-wider shadow-lg hover:shadow-xl hover:bg-white hover:border-burgundy/60 transition-all duration-300"
+            >
+              <span className="text-sm uppercase">Share Your Moments</span>
+              <motion.span
+                animate={{ x: [0, 4, 0] }}
+                transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+                className="text-gold text-xl"
+              >
+                📸
+              </motion.span>
+            </motion.a>
+            <p className="text-xs text-muted-foreground font-light mt-3">
+              Visit our wedding app to share photos and connect with guests
+            </p>
+          </motion.div>
+
           {/* Venue */}
           <motion.div variants={itemVariants} className="mb-10">
             <div className="flex items-center justify-center gap-2 mb-2">
