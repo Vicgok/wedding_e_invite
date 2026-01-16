@@ -277,15 +277,12 @@ const InvitationCard = ({ isVisible, details }: InvitationCardProps) => {
           </motion.div>
 
           {/* CTA - Wedding App */}
-          <motion.div 
-            variants={itemVariants}
-            className="mb-10"
-          >
+          <motion.div variants={itemVariants} className="mb-10">
             <p className="text-xs tracking-[0.25em] uppercase text-burgundy/60 font-light mb-4">
               Celebrate with us
             </p>
             <motion.a
-              href="https://vigneshwaraak.co.in/"
+              href="https://always-and-forever-tau.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05, y: -2 }}
@@ -305,7 +302,11 @@ const InvitationCard = ({ isVisible, details }: InvitationCardProps) => {
               <span className="text-sm uppercase">Share Your Moments</span>
               <motion.span
                 animate={{ x: [0, 4, 0] }}
-                transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+                transition={{
+                  duration: 1.5,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
                 className="text-gold text-xl"
               >
                 📸
